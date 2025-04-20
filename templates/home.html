@@ -12,10 +12,12 @@
             margin: 0;
             padding: 0;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
             line-height: 1.6;
+            position: relative;
         }
         
         .container {
@@ -26,6 +28,7 @@
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
             border: 1px solid #e2e8f0;
+            margin-bottom: 3rem;
         }
         
         h1 {
@@ -73,6 +76,25 @@
             background: linear-gradient(to right, transparent, #e2e8f0, transparent);
             margin: 2rem 0;
         }
+        
+        .github-footer {
+            position: absolute;
+            bottom: 1rem;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .github-link {
+            font-size: 0.9rem;
+            color: #94a3b8;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        
+        .github-link:hover {
+            color: #64748b;
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -82,6 +104,12 @@
         <div class="divider"></div>
         
         <a href="/login" class="btn">Воспользоваться сервисом</a>
+    </div>
+
+    <div class="github-footer">
+        <a href="https://github.com/anonimniy-vsoshovec/behavior" class="github-link" target="_blank">
+            github.com/anonimniy-vsoshovec/behavior
+        </a>
     </div>
 </body>
 </html>
